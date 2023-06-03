@@ -496,7 +496,7 @@ body {
     fill: var(--light-gray-color);
 }
 .subscribe {
-    padding: 80px 100px;
+    padding: 80px 0 80px 80px;
 }
 .subscribe-title {
     margin-bottom: 16px;
@@ -509,9 +509,6 @@ body {
 .subscribe-form {
     display: flex;
     gap: 24px;
-}
-.subscribe-form-label {
-    margin-right: 24px;
 }
 .subscribe-form-input {
     width: 264px;

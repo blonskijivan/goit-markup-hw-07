@@ -14,6 +14,14 @@
         <title>Web Studio</title>
     </head>
     <body>
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+            <symbol id="icon-charm_menu-hamburger" viewBox="0 0 47 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
+            </symbol>
+            </defs>
+            </svg>
+            
         <header class="header">  
             <div class="container header-inner"> 
                 <nav class="main-nav">
@@ -38,6 +46,63 @@
                         <li class="contact-info-item"><a href="tel:+380961111111" class="contact-info-link">+11 (000) 111-11-11</a></li>
                     </ul>  
                 </address>  
+                <button type="button" class="burger-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="icon-burger-menu" width="32" height="22"><use href="./images/icons.svg#icon-charm_menu-hamburger"></use></svg> 
+                </div>
+                <div class="js-menu-container">
+                    <button type="button" class="js-close-menu">
+                        <svg class="close-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="menu">
+                        <li class="menu-item active">
+                            <a href="./index.html" class="menu-link">Studio</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./portfolio.html" class="menu-link">Portfolio</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="js-menu-container-bottom">
+                        <address>
+                            <ul class="contact-info">
+                                <li class="contact-info-item">
+                                    <a href="tel:+380961111111" class="contact-info-link contact-info-tel">+11 (000) 111-11-11</a>
+                                </li>
+                                <li class="contact-info-item">
+                                    <a href="mailto:info@devstudio.com" class="contact-info-link">info@devstudio.com</a>
+                                </li>
+                               
+                            </ul>  
+                        </address>
+                        <ul class="social-icon-container footer-icon-container">
+                            <li class="social-media-item">
+                                <a class="social-link" href="#">
+                                    <svg class="icon" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="social-link" href="#">
+                                    <svg class="icon" width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="social-link" href="#">
+                                    <svg class="icon" width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="social-link" href="#">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-linkedin"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header> 
         <main>
@@ -256,7 +321,6 @@
                                 </a>
                         </li>
                     </ul>
-                    
                 </div>
             </section>
         </main>
@@ -356,7 +420,7 @@
                                     <use href="./images/icons.svg#icon-checkmark"></use>
                                 </svg>
                             </span>
-                            I accept the terms and conditions of the<a href="#" class="modal-privacy">Privacy Policy</a>                               
+                            I accept the terms and conditions of the <a href="#" class="modal-privacy">Privacy Policy</a>                               
                         </label>
                     </div>
                         <button type="submit" class="contact-form-submit">Send</button>
@@ -364,5 +428,6 @@
             </div>
         </div>    
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
